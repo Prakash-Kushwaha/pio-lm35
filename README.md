@@ -73,7 +73,3 @@ The code uses a predefined character code (ASCII 223) to display the degree symb
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
-
----
-
-This `README` provides a comprehensive overview and helps other users understand your project, making it easy to set up and use.
