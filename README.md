@@ -1,3 +1,7 @@
+Here’s the README updated for PlatformIO and Visual Studio Code as the IDE:
+
+---
+
 # LM35 Temperature Display with ATmega32 and 16x2 I2C LCD
 
 This project uses an ATmega32 microcontroller to read temperature data from an LM35 temperature sensor and displays it on a 16x2 LCD using the I2C protocol. The temperature readings update dynamically on the LCD, refreshing only when there is a significant change.
@@ -23,6 +27,9 @@ The LM35 sensor is an analog temperature sensor that outputs a voltage linearly 
 - External 5V power supply (optional)
 
 ## Circuit Diagram
+
+![Proteus Schematic](schematic.png)
+
 The connections for this project are as follows:
 - **LM35 sensor**
   - VCC to +5V
@@ -36,9 +43,17 @@ The connections for this project are as follows:
   - GND to Ground
 
 ## Setup and Installation
-1. **Software Setup**: Ensure you have the Arduino IDE with the ATmega32 board library and the necessary LCD I2C libraries installed.
-2. **Hardware Setup**: Assemble the circuit as per the circuit diagram.
-3. **Code Upload**: Connect the ATmega32 to your computer using an ISP programmer and upload the code from `main.cpp`.
+1. **PlatformIO Setup**:
+   - Ensure PlatformIO is installed in Visual Studio Code.
+   - Set up a new project in PlatformIO for the ATmega32 microcontroller.
+   - Install the `LiquidCrystal_I2C` library in PlatformIO for handling the LCD.
+   
+2. **Hardware Setup**:
+   - Assemble the circuit according to the diagram.
+
+3. **Code Upload**:
+   - Use an ISP programmer to connect the ATmega32 to your computer.
+   - Upload the code from `main.cpp` using PlatformIO.
 
 ## Code Explanation
 ### Libraries
